@@ -1,0 +1,30 @@
+.allFrontpageContainers{
+    position: relative;
+    top: 3em;
+    margin-bottom: 3em;
+}
+
+#flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+/*@media (max-width: 800px)?? for tilpasse mobilskjerm osv?*/
+.flex-box {
+  align-self: center;
+  margin: 0 0.5rem 0.5rem 0.5rem;
+  flex-basis: 420px;
+  max-height: 800px;
+  background-color: rgb(221, 221, 221);
+}
+
+/*
+h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+  }
+  */

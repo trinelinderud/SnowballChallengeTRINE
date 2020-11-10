@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+
+* {
+  /* Fjerner standard margin og padding */
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* bruker disse som class for fonts */
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* forskjellige tekststørrelser som er responsive */
+.small {
+    font-size: 1.0rem;
+}
+
+.medium {
+    font-size: 1.2rem;
+}
+
+.large {
+    font-size: 1.5rem;
+}
+
+.very-large {
+    font-size: 2.0rem;
+}
+
+/* paddinger for tekst */
+.padding-5 {
+    padding: 5px !important;
+}
+
+.padding-10 {
+    padding: 10px !important;
+}
+
+.padding-15 {
+    padding: 15px !important;
+}
+
+/* forside bilde */
+.frontpage-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  padding-bottom: 1.5em;
+  padding-top: 2em;
+  margin-bottom: 0;
+}
+
+.text-block {
+  position: absolute;
+  background-color: none;
+  color: #ffffff;
+  font-size: 2.5em;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+  text-shadow: 2px 2px 8px #000000;
+}
+
+
+
+/* header og nav bar */
+header {
+  background-color: #ffffff;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+nav {
+  float: right;
+  padding-right: 100px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  position: relative;
+}
+
+nav a {
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: #000000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #000000;
+
+  position: absolute;
+  top: 0;
+  width: 0;
+  transition: all ease-in-out 300ms;
+}
+
+  nav a:hover::before {
+    width: 100%;
+  }
+
+.frontpage-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* knapp */
+  .btn {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    -webkit-box-shadow: 1px 1px 3px #292929;
+    -moz-box-shadow: 1px 1px 3px #292929;
+    box-shadow: 1px 1px 3px #292929;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 13px;
+    background: #16393d;
+    opacity: 0.9;
+    padding: 7px 15px 7px 15px;
+    text-decoration: none;
+  }
+
+  .btn:hover {
+    opacity: 1;
+  }
+
+
+
+  /* responsiv nettside */
+  @media only screen and (max-width: 360px) {
+      nav ul li {
+          font-size: 0.6rem;
+          margin: 0 0;
+          padding: 0 2px;
+      }
+  }
+
+  @media only screen and (min-width: 600px) {
+
+  }
+
+  @media only screen and (max-width: 768px) {
+      nav ul li {
+          font-size: 0.8rem;
+      }
+  }
+
+  @media only screen and (min-width: 992px) {
+
+  }
+
+  @media only screen and (min-width: 1200px) {
+
+  }
